@@ -12,18 +12,31 @@ h1{
   margin: 0;
   background-color: rgb(148, 48, 55);
   display: inline-block;
-  height: 100px;
+  height: 200px;
   width: 400px;
-  margin-left: 20px;
+  left: 10px;
+  top: 10px;
   border-radius: 10px;
-  position: sticky;
-  
+  position: relative;
+  display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  right: 100px;
+  left: 400px;
+  top: 30px;
 }
 
-.amer, .description{
-  margin-left: 10px;
+.amer{
+ position: absolute;
+ top: 60px;
+ left: 10px;
+}
+
+.description{
+  position: absolute;
+  top: 110px;
+  left: 10px;
 }
 
 hr{
@@ -34,6 +47,7 @@ hr{
   display: block;
   width: 200px;
   height: 30px;
+  margin: 50px 10px;
 }
 
 button:hover{
@@ -86,9 +100,12 @@ textarea{
 }
 
 img{
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   height: 75px;
   border-radius: 45px;
   margin: 0;
   object-fit: contain;
+  position: absolute;
+  top: -30px;
+  left: 140px;
+  border: 5px solid rgb(148, 48, 55);
 }
